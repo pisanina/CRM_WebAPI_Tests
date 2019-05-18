@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CRM_WebAPI_Tests.DTO
+﻿namespace CRM_WebAPI_Tests.DTO
 {
-    class IndividualClientDTO
+    internal class IndividualClientDTO
     {
         public int? ID { get; set; }
         public string Name { get; set; }
@@ -14,5 +8,6 @@ namespace CRM_WebAPI_Tests.DTO
         public string Street { get; set; }
         public string City { get; set; }
         public string PostalCode { get; set; }
+        public int TypeId { get; set; }
     }
 }
