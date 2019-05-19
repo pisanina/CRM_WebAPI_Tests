@@ -57,10 +57,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActionTests.cs" />
     <Compile Include="ClientTests.cs" />
+    <Compile Include="DTO\ActionDTO.cs" />
     <Compile Include="DTO\ClientType.cs" />
     <Compile Include="DTO\IndividualClientDTO.cs" />
+    <Compile Include="DTO\SellerDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SellerTests.cs" />
     <Compile Include="TestSetup.cs" />
   </ItemGroup>
   <ItemGroup>

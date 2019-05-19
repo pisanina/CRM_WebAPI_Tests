@@ -25,7 +25,7 @@ namespace CRM_WebAPI_Tests
                 Street     = "Mazowiecka 12a",
                 City       = "Kozienice",
                 PostalCode = "09-678",
-                //TypeId = 1
+                TypeId = 1
             };
 
             var json = JsonConvert.SerializeObject(client);
@@ -47,7 +47,7 @@ namespace CRM_WebAPI_Tests
             Assert.AreEqual("Mazowiecka 12a", result.Street);
             Assert.AreEqual("Kozienice", result.City);
             Assert.AreEqual("09-678", result.PostalCode);
-           // Assert.AreEqual(1, result.TypeId);
+            Assert.AreEqual(1, result.TypeId);
         }
 
         [Test]
@@ -108,7 +108,8 @@ namespace CRM_WebAPI_Tests
                 EMail      = "t2@a.com",
                 Street     = "Zielonkawa 2",
                 City       = "Kozienice2",
-                PostalCode = "22-222"
+                PostalCode = "22-222",
+                TypeId = 1,
             };
 
             var json = JsonConvert.SerializeObject(updatedClient);
@@ -130,6 +131,7 @@ namespace CRM_WebAPI_Tests
             Assert.AreEqual("Zielonkawa 2", changedClient.Street);
             Assert.AreEqual("Kozienice2", changedClient.City);
             Assert.AreEqual("22-222", changedClient.PostalCode);
+            Assert.AreEqual(1, changedClient.TypeId);
 
         }
 
